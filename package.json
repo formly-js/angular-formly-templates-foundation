@@ -1,0 +1,51 @@
+{
+  "name": "angular-formly-templates-foundation",
+  "version": "1.0.0-beta.0",
+  "author": "Kent C. Dodds <kent@doddsfamily.us>",
+  "contributors": [
+    "Kent C. Dodds <kent@doddsfamily.us>"
+  ],
+  "homepage": "http://formly-js.github.io/angular-formly-templates-foundation/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/formly-js/angular-formly-templates-foundation.git"
+  },
+  "main": "dist/angular-formly-templates-foundation.js",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/formly-js/angular-formly-templates-foundation/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "build:dist": "webpack",
+    "build:minify": "webpack --config webpack.config.minify.js",
+    "build": "npm run build:dist; npm run build:minify",
+    "test": "karma start karma.conf.js",
+    "test:single": "karma start karma.conf.js --single-run",
+    "test:ci": "karma start karma.conf.ci.js",
+    "watch": "webpack --watch",
+    "start": "npm run watch & npm run test",
+    "release": "git push && npm publish && git push --tags",
+    "release:beta": "git push && npm publish && git push --tags"
+  },
+  "description": "Angular-Formly plugin which outputs foundation compatible form fields.",
+  "peerDependencies": {
+    "angular": "^1.2.x || >= 1.4.0-beta.0 || >= 1.5.0-beta.0",
+    "angular-formly": ">=4.0.5",
+    "api-check": ">=6.0.10"
+  },
+  "devDependencies": {
+    "babel-core": "^4.5.5",
+    "babel-loader": "^4.0.0",
+    "deep-extend": "^0.3.2",
+    "foundation-sites": "^5.5.2",
+    "jshint": "2.6.0",
+    "jshint-loader": "^0.8.3",
+    "lodash-node": "^2.4.1",
+    "ng-annotate": "^0.15.4",
+    "ng-annotate-loader": "0.0.2",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.6.0"
+  }
+}
