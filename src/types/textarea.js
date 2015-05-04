@@ -1,8 +1,8 @@
 export default  ngModule => {
   ngModule.config(addTextareaType);
 
-  function addTextareaType(formlyConfigProvider, formlyBootstrapApiCheck) {
-    const c = formlyBootstrapApiCheck;
+  function addTextareaType(formlyConfigProvider, formlyFoundationApiCheck) {
+    const c = formlyFoundationApiCheck;
     formlyConfigProvider.setType({
       name: 'textarea',
       template: '<textarea class="form-control" ng-model="model[options.key]"></textarea>',

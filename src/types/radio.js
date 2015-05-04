@@ -1,8 +1,8 @@
 export default ngModule => {
   ngModule.config(addRadioType);
 
-  function addRadioType(formlyConfigProvider, formlyBootstrapApiCheck) {
-    const c = formlyBootstrapApiCheck;
+  function addRadioType(formlyConfigProvider, formlyFoundationApiCheck) {
+    const c = formlyFoundationApiCheck;
     formlyConfigProvider.setType({
       name: 'radio',
       template: require('./radio.html'),

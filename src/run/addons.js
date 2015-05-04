@@ -1,14 +1,14 @@
 export default ngModule => {
   ngModule.run(addAddonsManipulator);
 
-  function addAddonsManipulator(formlyConfig, formlyBootstrapApiCheck) {
+  function addAddonsManipulator(formlyConfig, formlyFoundationApiCheck) {
     var addonTemplate = require('./addons.html');
-    const addonChecker = formlyBootstrapApiCheck.shape({
-      class: formlyBootstrapApiCheck.string.optional,
-      text: formlyBootstrapApiCheck.string.optional
+    const addonChecker = formlyFoundationApiCheck.shape({
+      class: formlyFoundationApiCheck.string.optional,
+      text: formlyFoundationApiCheck.string.optional
     }).strict.optional;
-    const api = formlyBootstrapApiCheck.shape({
-      templateOptions: formlyBootstrapApiCheck.shape({
+    const api = formlyFoundationApiCheck.shape({
+      templateOptions: formlyFoundationApiCheck.shape({
         addonLeft: addonChecker,
         addonRight: addonChecker
       })
@@ -17,7 +17,7 @@ export default ngModule => {
       if (options.type !== 'input' || (!options.templateOptions.addonLeft && !options.templateOptions.addonRight)) {
         return template;
       }
-      formlyBootstrapApiCheck.warn([api], [options]);
+      formlyFoundationApiCheck.warn([api], [options]);
       return addonTemplate.replace('<formly-transclude></formly-transclude>', template);
     });
   }

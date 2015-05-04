@@ -1,8 +1,8 @@
 export default ngModule => {
   ngModule.config(addCheckboxType);
 
-  function addCheckboxType(formlyConfigProvider, formlyBootstrapApiCheck) {
-    const c = formlyBootstrapApiCheck;
+  function addCheckboxType(formlyConfigProvider, formlyFoundationApiCheck) {
+    const c = formlyFoundationApiCheck;
     formlyConfigProvider.setType({
       name: 'multiCheckbox',
       template: require('./multiCheckbox.html'),

@@ -1,8 +1,8 @@
 export default  ngModule => {
   ngModule.config(addSelectType);
 
-  function addSelectType(formlyConfigProvider, formlyBootstrapApiCheck) {
-    const c = formlyBootstrapApiCheck;
+  function addSelectType(formlyConfigProvider, formlyFoundationApiCheck) {
+    const c = formlyFoundationApiCheck;
     formlyConfigProvider.setType({
       name: 'select',
       template: require('./select.html'),

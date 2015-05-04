@@ -1,8 +1,8 @@
 export default ngModule => {
   ngModule.config(addWrappers);
 
-  function addWrappers(formlyConfigProvider, formlyBootstrapApiCheck) {
-    const c = formlyBootstrapApiCheck;
+  function addWrappers(formlyConfigProvider, formlyFoundationApiCheck) {
+    const c = formlyFoundationApiCheck;
     formlyConfigProvider.setWrapper([
       {
         name: 'bootstrapLabel',
