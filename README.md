@@ -128,7 +128,7 @@ _Example text field_
 >`lines` sets the rows attribute for the textarea element.
 
 _Example textarea field_
-```javascript
+```json
 	{
 		"type": "textarea",
 		"key": "about",
@@ -148,7 +148,7 @@ _Example textarea field_
 ##### default (boolean, optional)
 
 _Example checkbox field_
-```javascript
+```json
 	{
 		"type": "checkbox",
 		"key": "checkThis",
@@ -166,7 +166,7 @@ _Example checkbox field_
 >`options` is an array of options for the radio form field to display. Each option should be an object with a `name`(string) and `value`(string or number).
 
 _Example radio field_
-```javascript
+```json
 	{
 		"key": "triedEmber",
 		"type": "radio",
@@ -201,7 +201,7 @@ _Example radio field_
 >`options` is an array of options for the select form field to display. Each option should be an object with a `name`(string). You may optionally add a `group` to some or all of your options.
 
 _Example select field_
-```javascript
+```json
 {
   "key": "transportation",
   "type": "select",
@@ -269,7 +269,7 @@ Thanks to [Kent C. Dodds](https://github.com/kentcdodds) for his continued suppo
 
 You could add the following to your css override to use it:
 
-```css
+```
 .help-block {
   display: block;
   margin-top: 5px;
