@@ -5,7 +5,7 @@ export default ngModule => {
     const c = formlyFoundationApiCheck;
     formlyConfigProvider.setWrapper([
       {
-        name: 'bootstrapLabel',
+        name: 'templateLabel',
         template: require('./label.html'),
         apiCheck: {
           templateOptions: c.shape({
@@ -15,7 +15,7 @@ export default ngModule => {
         },
         apiCheckInstance: c
       },
-      {name: 'bootstrapHasError', template: require('./has-error.html')}
+      {name: 'templateHasError', template: require('./has-error.html')}
     ]);
   }
 };

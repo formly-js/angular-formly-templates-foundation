@@ -6,7 +6,8 @@
   ],
   "contributors": [
     "Astrism <astrisms@gmail.com>",
-    "Kent C. Dodds <kent@doddsfamily.us>"
+    "Kent C. Dodds <kent@doddsfamily.us>",
+    "Eric S. Bishard <e.bishard@gmail.com>"
   ],
   "main": "dist/angular-formly-templates-foundation.js",
   "description": "Angular-Formly plugin which outputs foundation compatible form fields.",

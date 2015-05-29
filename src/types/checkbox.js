@@ -6,7 +6,7 @@ export default ngModule => {
     formlyConfigProvider.setType({
       name: 'checkbox',
       template: require('./checkbox.html'),
-      wrapper: ['bootstrapHasError'],
+      wrapper: ['templateHasError'],
       apiCheck: {
         templateOptions: c.shape({
           label: c.string
