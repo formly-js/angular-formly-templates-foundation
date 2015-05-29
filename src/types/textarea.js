@@ -5,8 +5,8 @@ export default  ngModule => {
     const c = formlyFoundationApiCheck;
     formlyConfigProvider.setType({
       name: 'textarea',
-      template: '<textarea class="form-control" ng-model="model[options.key]"></textarea>',
-      wrapper: ['bootstrapLabel', 'bootstrapHasError'],
+      template: '<textarea class="" ng-model="model[options.key]"></textarea>',
+      wrapper: ['templateLabel', 'templateHasError'],
       defaultOptions: {
         ngModelAttrs: {
           rows: {attribute: 'rows'},

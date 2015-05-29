@@ -22,10 +22,9 @@ var baseConfig = {
   output: {
     filename: 'angular-formly-templates-foundation.js',
     path: here('dist'),
-    library: 'ngFormlyTemplatesBootstrap',
+    library: 'ngFormlyTemplatesFoundation',
     libraryTarget: 'umd'
   },
-
 
   stats: {
     colors: true,

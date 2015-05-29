@@ -1,12 +1,8 @@
 [![Build Status](https://travis-ci.org/formly-js/angular-formly.svg)](https://travis-ci.org/formly-js/angular-formly)
 [![Coverage Status](https://img.shields.io/coveralls/formly-js/angular-formly.svg)](https://coveralls.io/r/formly-js/angular-formly)
 
-## Angular-Formly: Bootstrap Template
-This is a template for Angular-Formly which adds templates with classes specific to bootstrap. Each field is wrapped in a div. This library is not standalone and requires angular-formly to be present and loaded.
-
-### NOTICE: UPGRADING FROM 2.0 to 3.0?
-
-There were some [significant changes](https://github.com/formly-js/angular-formly/blob/master/CHANGELOG.md) that you'll want to be aware of. In order to upgrade and get all the cool features, you're going to need to change your field configurations. [Here is a tool](http://jsbin.com/ruwoke) that should help make that process easier. Also, if you are not able to update the configuration very easily, see [this issue](https://github.com/formly-js/angular-formly/issues/162) for ideas on how to ease things a little.
+## Angular-Formly: Foundation Template
+This is a template for Angular-Formly which adds templates with classes specific to foundation. Each field is wrapped in a div. This library is not standalone and requires angular-formly to be present and loaded.
 
 ### Demo http://formly-js.github.io/angular-formly
 
@@ -22,24 +18,24 @@ There were some [significant changes](https://github.com/formly-js/angular-forml
 ## Install in your project
 - Install [Angular-Formly](https://github.com/formly-js/angular-formly)
 
-- Install Angular-Formly: Bootstrap Templates
- `$ bower install angular-formly angular-formly-templates-bootstrap --save`
+- Install Angular-Formly: Foundation Templates
+ `$ bower install angular-formly angular-formly-templates-foundation --save`
 
  or
 
- `$ npm install angular-formly angular-formly-templates-bootstrap --save`
+ `$ npm install angular-formly angular-formly-templates-foundation --save`
 
 - Include the javascript file in your index.html, Formly comes in the following flavors:
  `<script src="bower_components/angular-formly/dist/formly.min.js"></script>`
- `<script src="bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.min.js"></script>`
+ `<script src="bower_components/angular-formly-templates-foundation/dist/angular-formly-templates-foundation.min.js"></script>`
 
  and
 
- `angular.module('yourModule', ['formly', 'formlyBootstrap']);`
+ `angular.module('yourModule', ['formly', 'formlyFoundation']);`
 
  or
 
- `angular.module('yourModule', [require('angular-formly'), require('angular-formly-templates-bootstrap')]);`
+ `angular.module('yourModule', [require('angular-formly'), require('angular-formly-templates-foundation')]);`
 
 ## Documentation
 
@@ -110,7 +106,7 @@ Below is a detailed description of each form fields and its custom properties.
 ##### default (string, optional)
 
 _Example text field_
-```json
+```javascript
 	{
 		"type": "text",
 		"key": "firstName",
@@ -263,3 +259,21 @@ Please see the [CONTRIBUTING Guidelines](CONTRIBUTING.md).
 
 A special thanks to [Nimbly](http://gonimbly.com) for creating/sponsoring Angular-Formly's development.
 Thanks to [Kent C. Dodds](https://github.com/kentcdodds) for his continued support on the project.
+
+*Other Notes:
+  (Bootstrap vs Foundation Differences)
+  Our bootstrap templates are made to work with a class called help-block, Foundation 5 does not
+  have this class, but it is a useful class used on paragraph elements following an input and is
+  used to describe the input, but unlike a label it is usually underneath a text field and is easy
+  to implement and support has been left in Angular-Formly-Foundation.
+
+You could add the following to your css override to use it:
+
+```
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+```

@@ -6,7 +6,7 @@ export default ngModule => {
     formlyConfigProvider.setType({
       name: 'multiCheckbox',
       template: require('./multiCheckbox.html'),
-      wrapper: ['bootstrapLabel', 'bootstrapHasError'],
+      wrapper: ['templateLabel', 'templateHasError'],
       defaultOptions: {
         noFormControl: false
       },
