@@ -1,4 +1,4 @@
-// angular-formly-templates-foundation version 1.0.0-beta.0 built with ♥ by Kent C. Dodds <kent@doddsfamily.us> (ó ì_í)=óò=(ì_í ò)
+// angular-formly-templates-foundation version 1.0.0-beta.1 built with ♥ by Kent C. Dodds <kent@doddsfamily.us> (ó ì_í)=óò=(ì_í ò)
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -74,7 +74,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    prefix: "angular-formly-foundation"
 	  }
 	}));
-	ngModule.constant("formlyFoundationVersion", ("1.0.0-beta.0"));
+	ngModule.constant("formlyFoundationVersion", ("1.0.0-beta.1"));
 	
 	__webpack_require__(5)(ngModule);
 	__webpack_require__(6)(ngModule);
