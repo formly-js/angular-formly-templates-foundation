@@ -1,18 +1,16 @@
 export default ngModule => {
   ngModule.config(addCheckboxType);
 
-  function addCheckboxType(formlyConfigProvider, formlyFoundationApiCheck) {
-    const c = formlyFoundationApiCheck;
+  function addCheckboxType(formlyConfigProvider) {
     formlyConfigProvider.setType({
       name: 'checkbox',
       template: require('./checkbox.html'),
       wrapper: ['templateHasError'],
-      apiCheck: {
-        templateOptions: c.shape({
+      apiCheck: check => ({
+        templateOptions: {
           label: c.string
-        })
-      },
-      apiCheckInstance: c
+        }
+      })
     });
   }
 };
