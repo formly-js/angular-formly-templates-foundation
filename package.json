@@ -1,6 +1,6 @@
 {
   "name": "angular-formly-templates-foundation",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "author": "Kent C. Dodds <kent@doddsfamily.us>",
   "contributors": [
     "Kent C. Dodds <kent@doddsfamily.us>"
@@ -37,17 +37,34 @@
     "api-check": ">=6.0.10"
   },
   "devDependencies": {
+    "angular": "1.5.0",
+    "angular-formly": "7.5.0",
+    "api-check": "7.5.5",
     "babel-core": "^4.5.5",
     "babel-loader": "^4.0.0",
+    "chai": "3.5.0",
     "deep-extend": "^0.3.2",
     "foundation-sites": "^5.5.2",
     "jshint": "2.6.0",
     "jshint-loader": "^0.8.3",
+    "karma": "0.13.21",
+    "karma-chai": "0.1.0",
+    "karma-chrome-launcher": "0.2.2",
+    "karma-firefox-launcher": "0.1.7",
+    "karma-mocha": "0.2.2",
+    "karma-webpack": "1.7.0",
     "lodash-node": "^2.4.1",
+    "mocha": "2.4.5",
     "ng-annotate": "^0.15.4",
     "ng-annotate-loader": "0.0.2",
     "raw-loader": "^0.5.1",
     "webpack": "^1.6.0",
     "with-package": "0.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/formly-js/angular-formly-templates-foundation/issues"
+  },
+  "dependencies": {},
+  "keywords": [],
+  "license": "MIT"
 }

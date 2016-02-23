@@ -1,18 +1,17 @@
-[![Build Status](https://travis-ci.org/formly-js/angular-formly.svg)](https://travis-ci.org/formly-js/angular-formly)
-[![Coverage Status](https://img.shields.io/coveralls/formly-js/angular-formly.svg)](https://coveralls.io/r/formly-js/angular-formly)
-
 ## Angular-Formly: Foundation Template
 This is a template for Angular-Formly which adds templates with classes specific to foundation. Each field is wrapped in a div. This library is not standalone and requires angular-formly to be present and loaded.
 
-### Demo http://formly-js.github.io/angular-formly
+### Project unmaintained
+
+Feel free to file issues and pull requests, but it may be a while before anyone gets to them :-/ Forks are welcome.
 
 ## Dependencies
 - Required to use Formly:
- - Angular
- - Angular-Formly
+- Angular
+- Angular-Formly
 
-- Dev dependencies to build Formly
- - npm
+Dev dependencies to build Formly
+- npm
 
 
 ## Install in your project
