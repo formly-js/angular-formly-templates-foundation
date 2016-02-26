@@ -55,8 +55,8 @@
     "karma-webpack": "1.7.0",
     "lodash-node": "^2.4.1",
     "mocha": "2.4.5",
-    "ng-annotate": "^0.15.4",
-    "ng-annotate-loader": "0.0.2",
+    "ng-annotate": "1.2.1",
+    "ng-annotate-loader": "0.1.0",
     "raw-loader": "^0.5.1",
     "webpack": "^1.6.0",
     "with-package": "0.2.0"

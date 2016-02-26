@@ -8,7 +8,7 @@ export default ngModule => {
       wrapper: ['templateHasError'],
       apiCheck: check => ({
         templateOptions: {
-          label: c.string
+          label: check.string
         }
       })
     });
